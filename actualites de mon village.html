@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actualités de Golipla</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #2e8b57;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        nav {
+            background-color: #333;
+            overflow: hidden;
+        }
+
+        nav a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        nav a:hover {
+            background-color: #575757;
+        }
+
+        .container {
+            display: none;
+            margin: 20px;
+        }
+
+        .container.active {
+            display: flex;
+        }
+
+        .main-content {
+            flex: 70%;
+            padding: 20px;
+            background-color: white;
+            margin-right: 20px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .sidebar {
+            flex: 30%;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        article {
+            margin-bottom: 30px;
+        }
+
+        article h2 {
+            color: #2e8b57;
+        }
+
+        article p {
+            line-height: 1.6;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Tout Savoir Sur Les Actualités De Golipla Avec La MUDEGO</h1>
+</header>
+
+<nav>
+    <a onclick="showSection('accueil')">Accueil</a>
+    <a onclick="showSection('nouvelles')">Dernières Nouvelles</a>
+    <a onclick="showSection('evenements')">Événements</a>
+    <a onclick="showSection('galerie')">Galerie</a>
+    <a onclick="showSection('contact')">Contact</a>
+</nav>
+
+<!-- Sections -->
+<div id="accueil" class="container active">
+    <div class="main-content">
+        <article>
+            <h2>Bienvenue sur Golipla News</h2>
+            <p><Strong>Découvrez les dernières actualités et événements de notre village Golipla dans le département de Kounahiri. <br> Restez informé des nouvelles locales et des initiatives de la MUDEGO qui touchent notre communauté.</Strong></p>
+        </article>
+    </div>
+    <div class="sidebar">
+        <h3>À la Une</h3>
+        <ul>
+            <li><a href="adhesion-mudego-femudek.html" target="_blank">La MUDEGO adhère à la FEMUDEK</a></li>
+            <li><a href="#">Actualité Importante 2</a></li>
+            <li><a href="#">Actualité Importante 3</a></li>
+            <li><a href="NECROLOGIE.html" target="_blank"> Décès de la Maman du chef du Village</a></li>
+        </ul>
+    </div>
+</div>
+
+<div id="nouvelles" class="container">
+    <div class="main-content">
+        <article>
+            <h2>Convocation à la Réunion de la MUDEGO</h2>
+            <p>
+                <strong>Date :</strong> Dimanche 11 août 2024<br>
+                <strong>Heure :</strong> 09h00<br>
+                <strong>Lieu :</strong> Yopougon Beago, au domicile du frère Gogbe Jules
+            </p>
+            <p>
+                <strong>Accès au lieu :</strong><br>
+                - Prendre un gbaka en direction de Yopougon pour le Palais.<br>
+                - Descendre au Palais, puis emprunter un taxi pour Beago via le marché.
+            </p>
+            <p>
+                <strong>Ordre du jour :</strong><br>
+                1. Informations<br>
+                2. Redynamisation de la MUDEGO<br>
+                3. Divers
+            </p>
+            <p><strong>NB :</strong> La présence de tous est vivement souhaitée.</p>
+            <p>Serv.com du président</p>
+        </article>
+    </div>
+</div>
+
+<div id="evenements" class="container">
+    <div class="main-content">
+        <article>
+            <h2>Prochains Événements à Kounahiri</h2>
+            <p>Découvrez les événements à venir dans notre village de Kounahiri :</p>
+            <ul>
+                <li><strong>Mercredi 14 août 2024 :</strong> Fête traditionnelle de la Moisson à Kounahiri. Cérémonies culturelles, danses et repas communautaire.</li>
+                <li><strong>Jeudi 15 août 2024 :</strong> Journée sportive avec tournoi de football inter-villages. Début à 09h00 au stade municipal de Kounahiri.</li>
+                <li><strong>Vendredi 16 août 2024 :</strong> Conférence sur le développement local à la salle polyvalente de Kounahiri, de 10h00 à 13h00.</li>
+                <li><strong>Samedi 17 août 2024 :</strong> Marché artisanal et exposition de produits locaux au centre du village, de 08h00 à 16h00.</li>
+            </ul>
+        </article>
+    </div>
+</div>
+
+<div id="galerie" class="container">
+    <div class="main-content">
+        <article>
+            <h2>Galerie Photo</h2>
+            <p>Explorez les photos de notre communauté et de ses activités.</p>
+        </article>
+    </div>
+</div>
+
+<div id="contact" class="container">
+    <div class="main-content">
+        <article>
+            <h2>Contactez-nous</h2>
+            <p>Pour plus d'informations, n'hésitez pas à nous contacter :</p>
+            <ul>
+                <li><strong>Gogbé Serge, président de la MUDEGO :</strong> Tel: 0707367619</li>
+                <li><strong>Gogbé Clément, représentant de la MUDEGO à la FEMUDEK :</strong> Tel: 0749060720</li>
+            </ul>
+        </article>
+    </div>
+</div>
+
+<footer>
+      &copy; Copy Right, 2024 Golipla News. Tous droits réservés. Email: peligbe@yahoo.fr Tel: 07-07-91-47-33
+</footer>
+
+<script>
+    function showSection(sectionId) {
+        const sections = document.querySelectorAll('.container');
+        sections.forEach(section => {
+            section.classList.remove('active');
+        });
+        document.getElementById(sectionId).classList.add('active');
+    }
+</script>
+
+</body>
+</html>
